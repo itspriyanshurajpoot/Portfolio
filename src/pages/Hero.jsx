@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-[#1E1E1D] text-white flex flex-col gap-10 md:flex-row items-center justify-between md:py-10 md:mb-10"
+      className="bg-[#1E1E1D] text-white flex flex-col gap-10 md:flex-row items-center justify-between px-7 md:px-20 md:py-10 md:mb-10"
     >
       {/* Left Side (Text Section) */}
       <motion.div

@@ -88,7 +88,7 @@ const Project = () => {
   }, [activeTag]);
 
   return (
-    <section id="projects" className="w-full py-16">
+    <section id="projects" className="w-full px-7 md:px-20 md:py-10 md:mb-10">
       <div className="max-w-7xl mx-auto">
         <h1 className="max-w-fit text-[16px] font-semibold mx-auto mb-8 md:mb-16 text-center text-neutarl-300 bg-gray-700 px-6 py-2 rounded-full">
           <span>Projects</span>

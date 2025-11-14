@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="w-full py-16 sm:py-20 lg:py-24"
+      className="w-full px-7 md:px-20 py-16 sm:py-20 lg:py-24"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -56,7 +56,7 @@ const About = () => {
                 <motion.p
                   key={item.id}
                   variants={itemVariants}
-                  className="text-sm sm:text-base lg:text-lg text-slate-300 leading-relaxed sm:leading-relaxed lg:leading-relaxed text-justify"
+                  className="text-sm sm:text-base lg:text-lg text-slate-300 text-left px-2 md:px-0"
                 >
                   {item.text}
                 </motion.p>
@@ -66,7 +66,7 @@ const About = () => {
             {/* Optional: Add social links or call-to-action */}
             <motion.div
               variants={itemVariants}
-              className="pt-6 flex flex-wrap gap-4"
+              className="pt-6 flex flex-wrap gap-4 px-2 md:px-0"
             >
               <a
                 href="#contact"
