@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24"
+      className="w-full py-16 sm:py-20 lg:py-24"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -70,7 +70,7 @@ const About = () => {
             >
               <a
                 href="#contact"
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
+                className="inline-flex items-center px-6 py-3 rounded-lg bg-linear-to-r from-cyan-500 to-blue-500 text-white font-medium hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
               >
                 Get in Touch
               </a>

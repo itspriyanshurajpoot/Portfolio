@@ -1,3 +1,4 @@
+import { Link, useNavigate } from "react-router";
 import { assets } from "../assets/assets";
 import { motion, scale, stagger } from "motion/react";
 
@@ -52,7 +53,10 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="bg-[#1E1E1D] text-white flex flex-col gap-10 md:flex-row items-center justify-between px-7 md:px-20 md:py-10 md:mb-10">
+    <section
+      id="home"
+      className="bg-[#1E1E1D] text-white flex flex-col gap-10 md:flex-row items-center justify-between md:py-10 md:mb-10"
+    >
       {/* Left Side (Text Section) */}
       <motion.div
         initial="hidden"
@@ -60,7 +64,9 @@ const Hero = () => {
         variants={textVarient}
         className="md:w-1/2 px-4 text-left space-y-2 order-2 md:order-1"
       >
-        <p className="text-[#00ffff] font-medium text-[16px] tracking-wide">Hello, I’m</p>
+        <p className="text-[#00ffff] font-medium text-[16px] tracking-wide">
+          Hello, I’m
+        </p>
 
         <h1 className="text-3xl text-neutral-200 md:text-4xl font-bold font-poppins">
           Priyanshu Kumar Singh
@@ -99,9 +105,11 @@ const Hero = () => {
             }}
             className="border border-[#00ffff] px-4 py-2 hover:cursor-pointer relative group duration-300 rounded-md shadow-[0px_1px_10px_0px_rgba(225, 225, 225, 0.2)_inset,0px_-1px_2px_0px_rgba(225, 225, 225, 0.2)_inset inline-block"
           >
-            <span className="group-hover:text-[#00ffff] transition-colors duration-300">
-              View Projects
-            </span>
+            <a href="#projects">
+              <span className="group-hover:text-[#00ffff] transition-colors duration-300">
+                View Projects
+              </span>
+            </a>
           </motion.button>
           <motion.button
             whileHover={{
@@ -119,9 +127,11 @@ const Hero = () => {
             }}
             className="border border-[#00ffff] px-4 py-2 hover:cursor-pointer relative group duration-300 rounded-md shadow-[0px_1px_10px_0px_rgba(225, 225, 225, 0.2)_inset,0px_-1px_2px_0px_rgba(225, 225, 225, 0.2)_inset inline-block"
           >
-            <span className="group-hover:text-[#00ffff] transition-colors duration-300">
-              Contact Me
-            </span>
+            <a href="#contact">
+              <span className="group-hover:text-[#00ffff] transition-colors duration-300">
+                Contact Me
+              </span>
+            </a>
           </motion.button>
         </div>
       </motion.div>

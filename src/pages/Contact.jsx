@@ -86,7 +86,7 @@ const Contact = () => {
   };
 
   return (
-    <motion.section className="w-full flex flex-col bg-black items-center justify-center px-4 py-16 rounded-xl gap-4 md:px-10 md:py-20">
+    <motion.section className="w-full flex flex-col bg-black items-center justify-center py-16 rounded-xl gap-4 md:py-20">
       <h1 className="text-[16px] font-semibold mb-2 text-center text-neutral-200 bg-gray-700 px-6 py-2 rounded-full">
         <span>Get In Touch</span>
       </h1>
