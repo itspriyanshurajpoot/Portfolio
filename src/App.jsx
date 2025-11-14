@@ -9,7 +9,7 @@ import Footer from './pages/Footer'
 const App = () => {
   return (
     <div className='w-full bg-[#1E1E1D] min-h-screen mx-auto text-white'>
-      <div className='flex flex-col gap-1 md:gap-[2vh] w-full max-w-[1400px] mx-auto min-h-screen px-7 md:px-20 border border-gray-100'>
+      <div className='flex flex-col gap-1 md:gap-[2vh] w-full max-w-[1400px] mx-auto min-h-screen px-7 md:px-20'>
         <Navbar />
         <section id='hero' className='md:mt-8'>
           <Hero />
