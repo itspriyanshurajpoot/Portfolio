@@ -134,7 +134,7 @@ const Navbar = () => {
         animate="visible"
         className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500 font-bold text-2xl"
       >
-        <Link to={"/"}>Portfolio</Link>
+        <Link to={"/"}>PORTFOLIO</Link>
       </motion.div>
       <div className="hidden md:flex flex-row items-center">
         <motion.ul

@@ -1,6 +1,7 @@
 import mainImage from './logo-image.png';
 import resume from './Priyanshu_Resume.pdf';
 import aboutImage from './about-image.png';
+import thumbnail1 from './portfolio-thumbnail.png'
 
 
 
@@ -8,6 +9,7 @@ export const assets = {
     mainImage,
     resume,
     aboutImage,
+    thumbnail1
 }
 
 export const navBarItems = [

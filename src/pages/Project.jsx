@@ -1,5 +1,6 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { motion, AnimatePresence, scale, hover } from "framer-motion";
+import { assets } from "../assets/assets";
 
 /* Example projects - replace images/links with your own */
 const projectsData = [
@@ -9,51 +10,23 @@ const projectsData = [
     short: "Personal portfolio built with React & Tailwind",
     description:
       "Responsive portfolio with animations, dark mode and contact form. Built to showcase projects and blog posts.",
-    image: "/placeholder-project.png", // put real image in public/ or import from assets
-    tags: ["React", "Tailwind"],
-    demo: "https://example.com",
-    repo: "https://github.com/your/repo",
+    image: assets.thumbnail1, // put real image in public/ or import from assets
+    tags: ["React", "Tailwind", "Framer motion"],
+    demo: "https://priyanshuportfolio-eight.vercel.app/",
+    repo: "https://github.com/itspriyanshurajpoot/priyanshu_portfolio",
   },
   {
     id: "p2",
-    title: "E-commerce UI",
-    short: "Shop UI with cart & filter features",
+    title: "Blogging Application",
+    short: "Full-featured blogging platform with editor & tagging",
     description:
-      "Pixel-perfect e-commerce UI demonstrating product grid, filtering and cart interactions.",
+      "Responsive blogging app with a rich-text editor, post management, search, comments and user auth. Frontend built with React and Tailwind; backend (API) with Java/Spring boot.",
     image: "/placeholder-project.png",
-    tags: ["React", "Node", "Design"],
-    demo: "#",
-    repo: "#",
+    tags: ["React","CSS", "Java/Spring Boot", "MySQL", "Cloudinary", "JWT"],
+    demo: "https://blogging-application-frontend-eta.vercel.app/",
+    repo: "https://github.com/itspriyanshurajpoot/Blogging-Application-Frontend",
   },
-  {
-    id: "p3",
-    title: "Chat App",
-    short: "Realtime chat using WebSockets",
-    description:
-      "Lightweight chat with rooms and presence indicators. Demo shows client + mock server demo.",
-    image: "/placeholder-project.png",
-    tags: ["Node", "Socket", "React"],
-    demo: "#",
-    repo: "#",
-  },
-  // add more...
 ];
-
-const container = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.06 } },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 12, scale: 0.99 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.32, ease: "easeOut" },
-  },
-  hover: { y: -6, scale: 1.02, transition: { duration: 0.18 } },
-};
 
 const parentVariant = {
   hidden: {
